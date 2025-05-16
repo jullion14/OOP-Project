@@ -134,7 +134,12 @@
   <ItemGroup>
     <ClCompile Include="Cargo.cpp" />
     <ClCompile Include="Freight.cpp" />
+    <ClCompile Include="mainUI.cpp" />
     <ClCompile Include="Scheduler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Freight.txt" />
+    <Text Include="Cargo.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
