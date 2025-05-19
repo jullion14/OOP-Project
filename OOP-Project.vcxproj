@@ -128,11 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Cargo.h" />
+    <ClInclude Include="FileManager.h" />
     <ClInclude Include="Freight.h" />
     <ClInclude Include="Scheduler.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cargo.cpp" />
+    <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Freight.cpp" />
     <ClCompile Include="mainUI.cpp" />
     <ClCompile Include="Scheduler.cpp" />
@@ -140,6 +142,7 @@
   <ItemGroup>
     <Text Include="Freight.txt" />
     <Text Include="Cargo.txt" />
+    <Text Include="schedule.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

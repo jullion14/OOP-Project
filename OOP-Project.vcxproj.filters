@@ -24,6 +24,9 @@
     <ClInclude Include="Scheduler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Freight.cpp">
@@ -38,12 +41,18 @@
     <ClCompile Include="mainUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Freight.txt">
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="Cargo.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="schedule.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
