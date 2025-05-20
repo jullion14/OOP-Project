@@ -5,3 +5,4 @@ C04,Tokyo,1500
 C05,New York,1800
 C06,Beijing,2100
 C07,Sydney,2400
+C08,Singapore,0245
