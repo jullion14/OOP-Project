@@ -1,6 +1,9 @@
-﻿  FileManager.cpp
+﻿  Cargo.cpp
+  FileManager.cpp
   Freight.cpp
-  Scheduler.cpp
+  IDGenerator.cpp
+C:\Users\kktan\OneDrive\Documents\OOP Project Files\OOP-Project\IDGenerator.cpp(7,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   mainUI.cpp
+  Scheduler.cpp
   Generating Code...
-  OOP-Project.vcxproj -> C:\SIT\SIT\Trimester 3\INF1009\Assignment 1\OOP-Project\x64\Debug\OOP-Project.exe
+  OOP-Project.vcxproj -> C:\Users\kktan\OneDrive\Documents\OOP Project Files\OOP-Project\x64\Debug\OOP-Project.exe
