@@ -1,4 +1,5 @@
 #include "FileManager.h"
+#include "IDGenerator.h"
 #include <iostream>
 #include <iomanip>
 #include <algorithm>
@@ -46,14 +47,27 @@ void FileManager::display(const vector<Cargo>& cargos, const vector<Freight>& fr
 
 void FileManager::addCargo(std::vector<Cargo>& cargos)
 {
-    string id, destination, time;
-    cout << "Enter new Cargo ID: ";
-    cin >> id;
+    // Step 1: Extract all Cargo IDs
+    vector<string> cargoIds;
+    for (const auto& cargo : cargos)
+        cargoIds.push_back(cargo.getId());
+
+    // Step 2: Compute next ID
+    int maxID = getMaxIDNumber(cargoIds, 'C');
+    int nextID = maxID + 1;
+
+    // Step 3: Generate ID string
+    string id = generateSequentialID("C", nextID);
+
+    // Step 4: Input rest of the cargo info
+    string destination, time;
+    cout << "Generated Cargo ID: " << id << endl;
     cout << "Enter Destination: ";
     cin.ignore(); getline(cin, destination);
     cout << "Enter Time to Reach: ";
     cin >> time;
 
+    // Step 5: Create and store new Cargo
     cargos.emplace_back(id, destination, time);
     cout << "Cargo added successfully.\n";
 }
@@ -101,9 +115,17 @@ void FileManager::deleteCargo(vector<Cargo>& cargos)
 
 void FileManager::addFreight(vector<Freight>& freights)
 {
-    string id, stop, time;
-    cout << "Enter new Freight ID: ";
-    cin >> id;
+    vector<string> freightIds;
+    for (const auto& freight : freights)
+        freightIds.push_back(freight.getId());
+
+    int maxID = getMaxIDNumber(freightIds, 'F');
+    int nextID = maxID + 1;
+
+    string id = generateSequentialID("F", nextID);
+
+    string stop, time;
+    cout << "Generated Freight ID: " << id << endl;
     cout << "Enter Refuel Stop: ";
     cin.ignore(); getline(cin, stop);
     cout << "Enter Refuel Time: ";

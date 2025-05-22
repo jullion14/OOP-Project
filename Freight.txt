@@ -1,8 +1,8 @@
-F01,London,0730
-F02,Paris,0900
-F03,New York,1200
-F04,Tokyo,1500
-F05,Sydney,1800
-F06,Los Angeles,2100
-F07,Beijing,2400
-F08,Singapore,0245
+F1,London,0730
+F2,Paris,0900
+F3,New York,1200
+F4,Tokyo,1500
+F5,Sydney,1800
+F6,Los Angeles,2100
+F7,Beijing,2400
+F8,Singapore,0245

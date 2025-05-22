@@ -1,8 +1,2 @@
-﻿  Cargo.cpp
-  FileManager.cpp
-  Freight.cpp
-  mainUI.cpp
-  Scheduler.cpp
-  Generating Code...
-  LINK : C:\Users\leepq\Source\Repos\OOP-Project\x64\Debug\OOP-Project.exe not found or not built by the last incremental link; performing full link
+﻿  FileManager.cpp
   OOP-Project.vcxproj -> C:\Users\leepq\Source\Repos\OOP-Project\x64\Debug\OOP-Project.exe

@@ -130,12 +130,14 @@
     <ClInclude Include="Cargo.h" />
     <ClInclude Include="FileManager.h" />
     <ClInclude Include="Freight.h" />
+    <ClInclude Include="IDGenerator.h" />
     <ClInclude Include="Scheduler.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cargo.cpp" />
     <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="Freight.cpp" />
+    <ClCompile Include="IDGenerator.cpp" />
     <ClCompile Include="mainUI.cpp" />
     <ClCompile Include="Scheduler.cpp" />
   </ItemGroup>
