@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 
-class Cargo 
+class Cargo
 {
 private:
     string id;
@@ -15,10 +15,12 @@ private:
 public:
     Cargo(string id, string destination, string timeToReach);
     static vector<Cargo> loadFromFile(const string& filename);
-    void display() const; 
+    void display() const;
     string getId() const;
     string getDestination() const;
     string getTimeToReach() const;
+
+    static bool isValidTime(const string& time);
 };
 
 #endif

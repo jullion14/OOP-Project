@@ -12,12 +12,12 @@ public:
     static std::vector<Freight> loadFreightData(const std::string& filename);
     static void display(const std::vector<Cargo>& cargos, const std::vector<Freight>& freights);
 
-	//cargo editing functions
+    //cargo editing functions
     static void addCargo(std::vector<Cargo>& cargos);
     static void editCargo(std::vector<Cargo>& cargos);
     static void deleteCargo(std::vector<Cargo>& cargos);
 
-	//freight editing functions
+    //freight editing functions
     static void addFreight(std::vector<Freight>& freights);
     static void editFreight(std::vector<Freight>& freights);
     static void deleteFreight(std::vector<Freight>& freights);
